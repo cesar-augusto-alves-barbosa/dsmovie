@@ -1,0 +1,19 @@
+import './styles.css'
+
+function Pagination() {
+    return (
+        <div className="dsmovie-pagination-container">
+            <div className="dsmovie-pagination-box">
+                <button className="dsmovie-pagination-button" disabled={true} >
+                    <i className="dsmovie-pagination-arrow bi bi-caret-left-fill"></i>
+                </button>
+                <p>{`${1} de ${3}`}</p>
+                <button className="dsmovie-pagination-button" disabled={false} >
+                    <i className="dsmovie-pagination-arrow bi bi-caret-right-fill"></i>
+                </button>
+            </div>
+        </div>
+    );
+}
+
+export default Pagination;

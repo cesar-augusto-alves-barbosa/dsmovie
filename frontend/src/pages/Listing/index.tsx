@@ -28,9 +28,13 @@ function Listing() {
             })
     }, [pageNumber])
 
+    const handlePageChange = (newPageNumber: number) => {
+        setPageNumber(newPageNumber);
+    }
+
     return (
         <>
-            <Pagination />
+            <Pagination onChange={handlePageChange} page={page}/>
             <div className="container">
                 <div className="row">
                     {

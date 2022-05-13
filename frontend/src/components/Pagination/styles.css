@@ -51,3 +51,7 @@
 .dsmovie-pagination-arrow {
     color: var(--color-primary);
 }
+
+.dsmovie-pagination-button:disabled .dsmovie-pagination-arrow {
+    color: gray;
+}
